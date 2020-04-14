@@ -11,7 +11,7 @@
     </div>
 
 
-    <HomepageTemplete></HomepageTemplete>
+    <homepageTemplate></homepageTemplate>
 
   </div>
 </template>
@@ -19,12 +19,12 @@
 <script>
 
 import Header from "~/components/Header";
-import HomepageTemplete from "~/layouts/HomepageTemplete";
+import homepageTemplate from "~/layouts/homepageTemplate";
 
 export default {
   components:{
     Header,
-    HomepageTemplete
+    homepageTemplate
   },
 };
 </script>

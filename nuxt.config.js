@@ -34,6 +34,7 @@ module.exports = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/vuetify',
   ],
   /*
   ** Nuxt.js modules
@@ -55,11 +56,13 @@ module.exports = {
           iso: 'en-us',
           file: 'en-us.js'
         },
-      ],
-      langDir: 'locales/',
-      defaultLocale: 'zh-hant',
-      vueI18nLoader: true,
-      lazy: true,
+    ],
+    baseUrl: 'https://www.moshi.com/',
+    seo: true,
+    langDir: 'locales/',
+    defaultLocale: 'zh-hant',
+    vueI18nLoader: true,
+    lazy: true,
     }]
   ],
   /*
@@ -72,4 +75,8 @@ module.exports = {
     extend(config, ctx) {
     }
   },
+  router: {
+    middleware: ['locale-redirect'],
+    linkExactActiveClass: 'active-link',
+  }
 }
