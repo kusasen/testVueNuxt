@@ -18,7 +18,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#444',height:"2px",duration:5000 },
   /*
   ** Global CSS
   */
@@ -29,6 +29,10 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/datepicker.js', mode: 'client' },
+    { src: '~/plugins/gasp.js', mode: 'client' },
+    '~/plugins/axios',
+
   ],
   /*
   ** Nuxt.js dev-modules
@@ -42,6 +46,7 @@ module.exports = {
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
+    '@nuxtjs/axios',
     ['nuxt-i18n', {
       locales: [
         {
@@ -78,5 +83,9 @@ module.exports = {
   router: {
     middleware: ['locale-redirect'],
     linkExactActiveClass: 'active-link',
-  }
+  },
+  transition: {
+    name: 'layout',
+    mode: 'out-in'
+  },
 }

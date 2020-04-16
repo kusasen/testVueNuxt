@@ -5,16 +5,19 @@
 </template>
 
 <script>
-import axios from 'axios';
 import FullWidth from "~/components/template/FullWidth";
 import LeftToRight from "~/components/template/LeftToRight";
 import RightToLeft from "~/components/template/RightToLeft";
+import {sleep} from "~/assets/js/tool.js"
 
 export default {
   components:{
     FullWidth,
     LeftToRight,
     RightToLeft
+  },
+  async asyncData(){
+    await sleep(1000);
   },
   data(){
     return{
@@ -25,7 +28,7 @@ export default {
     }
   },
   created: function() {
-    axios.get("https://gist.githubusercontent.com/kusasen/c08eeeee562306fe2da6772085ec63a7/raw/127e02e3e932a27bfdcf3b0fe4445944a90502fc/homepage.json")
+    this.$axios.get("https://gist.githubusercontent.com/kusasen/c08eeeee562306fe2da6772085ec63a7/raw/127e02e3e932a27bfdcf3b0fe4445944a90502fc/homepage.json")
       .then(response => (this.data = response.data));
       
   },
