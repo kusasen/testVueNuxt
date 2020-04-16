@@ -8,7 +8,6 @@
 import FullWidth from "~/components/template/FullWidth";
 import LeftToRight from "~/components/template/LeftToRight";
 import RightToLeft from "~/components/template/RightToLeft";
-import {sleep} from "~/assets/js/tool.js"
 
 export default {
   components:{

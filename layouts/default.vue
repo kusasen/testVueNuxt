@@ -21,12 +21,16 @@
 
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
+import {sleep} from "~/assets/js/tool.js"
 
 export default {
   components:{
     Header,
     Footer
-  }
+  },
+  async asyncData(){
+    await sleep(1000);
+  },
 }
 
 </script>
