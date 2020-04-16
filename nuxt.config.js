@@ -31,6 +31,7 @@ module.exports = {
   plugins: [
     { src: '~/plugins/datepicker.js', mode: 'client' },
     { src: '~/plugins/gasp.js', mode: 'client' },
+    { src: '~/plugins/animate.scroll.js', mode: 'client' },
     '~/plugins/axios',
 
   ],

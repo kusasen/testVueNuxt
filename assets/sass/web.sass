@@ -171,3 +171,26 @@ a.btn-sweep
     transition: opacity .4s
 .layout-enter, .layout-leave-active
     opacity: 0
+
+
+//vue-animation
+.animate
+  transition-delay: .1s
+  transition-duration: .25s
+  transition-timing-function: ease-in
+
+.slide-up
+  transform: translateY(0)
+
+
+.slide-up.animate-active
+  transform: translateY(-100px)
+
+
+
+.footer
+    padding: 50px 0 30px
+    background-color: #efefef
+    text-align: center
+    color: $color-black
+    font-size: 12px

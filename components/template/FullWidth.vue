@@ -9,7 +9,6 @@
           <a href="#" class="btn-sweep btn-sweep-white">了解更多</a>
         </div>
       </div>
-      
     </div>
     <div class="txt-img">
       <img src="~assets/imgs/template-img3.jpg" :alt="msg">

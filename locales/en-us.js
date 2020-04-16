@@ -15,6 +15,7 @@ export default {
   pages: {
     home: 'Home',
     protect: 'Protect',
-    connect: 'Connect'
+    connect: 'Connect',
+    product: 'Product'
   },
 }

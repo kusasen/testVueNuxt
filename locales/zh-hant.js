@@ -15,6 +15,7 @@ export default {
   pages: {
     home: '回首頁',
     protect: '保護',
-    connect: '連接'
+    connect: '連接',
+    product: '產品'
   },
 }
